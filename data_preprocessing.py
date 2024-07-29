@@ -64,7 +64,7 @@ print(yas)
 
 
 
-'''3. bölümün amacı modelin sadece sayısal girdilerle çalışmasıdır.'''
+'''Regresyon algoritmaları numeric verilerle çalışır.'''
 #3.KATEGORİK VERİLER
 ulke = veriler.iloc[:,0:1].values
 print(ulke)
