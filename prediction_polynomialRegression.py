@@ -12,8 +12,11 @@ import pandas as pd
 dataset = pd.read_csv(r'C:\Users\PC\Desktop\Python ile Makine Öğrenmesi\maaslar.csv')
 print(dataset)
 
+#data frame dilimleme (slice)
 egitim_seviyesi = dataset.iloc[:,1:2]
 maas = dataset.iloc[:,2:]
+
+#NumPy array dönüşümü
 x = egitim_seviyesi.values
 y = maas.values
 
