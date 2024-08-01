@@ -3,6 +3,7 @@ birden fazla bağımsız değişkene bağlı olarak bağımlı değişkenin hesa
 y = ax1 + bx2 +cx3 +k +£
 £:hata payı
 '''
+from sklearn.metrics import r2_score
 
 '''
 KUKLA DEĞİŞKEN (DUMMY VARİABLE)
@@ -102,5 +103,3 @@ x_liste = s.iloc[:,[0,1,3,4]].values
 x_liste =np.array(x_liste,dtype=float)
 model = sm.OLS(cinsiyet.astype(float),x_liste).fit()
 print(model.summary())
-
-
