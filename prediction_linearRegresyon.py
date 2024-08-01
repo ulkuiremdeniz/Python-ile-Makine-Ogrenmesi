@@ -1,4 +1,5 @@
 ''' Ay bilgisine bakılarak satış tahmini yapmak'''
+from sklearn.metrics import r2_score
 
 #TAHMİN : PREDİCTİON
 '''
@@ -63,4 +64,5 @@ plt.ylabel("Satışlar")
 plt.show()
 
 
-
+print("Linear Regression R2 Değeri")
+print(r2_score(sales,regressor.predict(monts)))
